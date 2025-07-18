@@ -1,0 +1,31 @@
+# Dependencies
+/node_modules
+/packages/private_gui/node_modules
+/packages/public_gui/node_modules
+
+# Build output
+/packages/backend/deamon
+/packages/private_gui/dist
+/packages/public_gui/dist
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+/packages/backend/plugins/db/isle.db
+/packages/backend/plugins/db/isle.db-shm
+/packages/backend/plugins/db/isle.db-wal
+
+# Environment variables
+!.env.example
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db

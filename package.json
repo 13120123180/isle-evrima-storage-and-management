@@ -1,0 +1,46 @@
+{
+  "name": "isle-evrima-storage-and-management",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "yarn workspace backend dev",
+    "dev:private": "yarn workspace private_gui dev",
+    "dev:public": "yarn workspace public_gui dev",
+    "build:private": "yarn workspace private_gui build",
+    "build:public": "yarn workspace public_gui build",
+    "build": "yarn build:private && yarn build:public",
+    "dev": "concurrently \"yarn:dev:backend\" \"yarn:dev:private\" \"yarn:dev:public\"",
+    "install": "yarn workspace backend install",
+    "uninstall": "yarn workspace backend uninstall"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.10.0",
+    "better-sqlite3": "^11.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "element-plus": "^2.10.4",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "kasumi.js": "^0.7.1",
+    "module-alias": "^2.2.3",
+    "node-schedule": "^2.1.1",
+    "pinia": "^3.0.3",
+    "tail": "^2.2.6",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "concurrently": "^8.2.2",
+    "node-windows": "^1.0.0-beta.8",
+    "nodemon": "3.1.4",
+    "vite": "^7.0.4"
+  },
+  "_moduleAliases": {
+    "@": "packages/backend"
+  }
+}

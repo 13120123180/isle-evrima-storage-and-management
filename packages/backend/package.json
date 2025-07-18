@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "SET NODE_ENV=dev&&nodemon index.js",
+    "install": "node install",
+    "uninstall": "node uninstall"
+  }
+}
